@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicraft</title>
+    <link rel="shortcut icon" href="./logo.jpg" type="image/svg+xml">
+
+     <!-- google font link  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" class="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head  >
+<body>
+    <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"> Medicraft</a>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">About us</a>
+                <a href="#services">services</a>
+                <a href="#doctors">doctors</a>
+                <a href="#review">Testimonials</a>
+                <a href="#book">book</a>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search here....">
+                <label for="search bar" class="fas fa-search"></label>
+            </form>
+    </header>
+
+    <!-- login page -->
+    <div class="login-form-container">
+            <i class="fas fa-times" id="form-close"></i>
+
+        <form action=""><h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="passwaord" class="box" placeholder="enter your password">
+        <input type="submit" class="btn" value="Login Now">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+    </div>
+
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Healing with Heart</h3>
+            <p>Dedicated to Your Well-being, Your Trusted Healthcare Partner</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="./vid-1.mp4"></span>
+            <span class="vid-btn" data-src="./vid-2.mp4"></span>
+            <span class="vid-btn" data-src="./vid-3.mp4"></span>
+            <span class="vid-btn" data-src="./vid-4.mp4"></span>
+            <span class="vid-btn" data-src="./vid-5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="./vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+<!-- about us section -->
+<h2 class="main-head">About Us</h2>
+<section class="about" id="about">
+    <div class="icons" data-reveal="bottom">
+        <i class="fa-solid fa-user-doctor"></i>
+        <h3>80+</h3>
+        <p>doctors at work</p>
+        <div class="layer">
+            <p>A diverse team of over 80 dedicated doctors providing specialized care and expertise across various medical fields.</p>
+        </div>
+    </div>
+    <div class="icons" data-reveal="bottom">
+        <i class="fas fa-users"></i>
+        <h3>10000+</h3>
+        <p>satiesfied patients</p>
+        <div class="layer">
+            <p>With over 10,000 satisfied patients, we prioritize personalized care, fostering satisfaction and well-being in every interaction.</p>
+        </div>
+    </div>
+    <div class="icons" data-reveal="bottom">
+        <i class="fas fa-procedures"></i>
+        <h3>300+</h3>
+        <p>bed facility</p>
+        <div class="layer">
+            <p>Our hospital boasts a comforting environment across 300+ beds, ensuring optimal care and comfort for our patients' recovery.</p>
+        </div>
+    </div>
+    <div class="icons" data-reveal="bottom">
+        <i class="fa-solid fa-hospital"></i>
+        <h3>4</h3>
+        <p>Hospital Buildings</p>
+        <div class="layer">
+            <p>Our 4 expansive hospital buildings stand as pillars of healthcare, accommodating growth and delivering exceptional medical services.</p>
+        </div>
+    </div>
+</section>
+
+<!-- services section start -->
+
+<h1 class="main-head">Our <span>services</span></h1>
+<section class="services" id="services">
+    <div class="icons" data-reveal="bottom">
+        <i class="fa-solid fa-user-doctor"></i>
+        <h3>Medical Specialities</h3>
+        <p>Discover our specialized departments,including: Cardiology,Neurology,Orthopedics.</p>
+    </div>
+    <div class="icons" data-reveal="bottom">
+        <i class="fas fa-users"></i>
+        <h3>Emergency Services</h3>
+        <p>We are equipped to handel emergencies effeciently with 24/7 emergency room service. </p>
+    </div>
+    <div class="icons" data-reveal="bottom">
+        <i class="fas fa-procedures"></i>
+        <h3>Patient-Centric Care</h3>
+        <p>Experience compassionate care with Inpatient services and Patient Amenities.</p>
+    </div>
+
+</section>
+
+<!-- doctors sections -->
+
+<section class="listing" aria-labelledby="listing-label" id="doctors">
+    <div class="container">
+        <ul class="grid-list">
+            <li>
+                <p class="section-subtitle title-lg" id="listing-label"
+                data-reveal="left">Doctors Listing</p>
+                <h2 class="headline-md" data-reveal="left">Browse by specialist</h2>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div class="card-icon">
+                        <img src="./icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                    </div>
+                    <div>
+                        <h3 class="headline-sm card-title">Psychiatry</h3>
+                        <p class="card-text">Emily Carter</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div class="card-icon">
+                        <img src="./icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                    </div>
+                    <div>
+                        <h3 class="headline-sm card-title">Gynecology</h3>
+                        <p class="card-text">Alexander Patel</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div class="card-icon">
+                        <img src="./icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                    </div>
+                    <div>
+                        <h3 class="headline-sm card-title">Pulmonology</h3>
+                        <p class="card-text">Sophia Rodriguez</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div class="card-icon">
+                        <img src="./icon-5.png" width="71" height="71" loading="lazy" alt="icon">
+                    </div>
+                    <div>
+                        <h3 class="headline-sm card-title">Orthopedics</h3>
+                        <p class="card-text">Benjamin Chang</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div class="card-icon">
+                        <img src="./icon-6.png" width="71" height="71" loading="lazy" alt="icon">
+                    </div>
+                    <div>
+                        <h3 class="headline-sm card-title">Pediatrics</h3>
+                        <p class="card-text">Anand Gupta</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div class="card-icon">
+                        <img src="./icon-7.png" width="71" height="71" loading="lazy" alt="icon">
+                    </div>
+                    <div>
+                        <h3 class="headline-sm card-title">Osteology</h3>
+                        <p class="card-text">Shivani Verma</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Testimonials section -->
+<h1 class="main-head">Our <span>Testimonials</span></h1>
+<section class="review" id="review">
+    <div class="rw" data-reveal="left">
+ <p>
+    <div class="testimonials">
+        <div class="imgi"><img src="./test-1.jpeg" alt="image" class="imgii"></div>
+            <p class="ma-1">I can't express enough gratitude to the incredible team at MediCraft. Their prompt attention to my emergency medical situation was life-saving. The doctors' expertise and the nurses' constant support made a scary situation bearable. Thank you for your dedication and care!</p>
+            <p class="ma-2" style="text-align: right;">Teacher,Marry Williams<br> Wellington, New Zealand</p>
+    </div>
+ </p>
+</div>
+
+<div class="rw" data-reveal="right">
+    <p>
+       <div class="testimonials">
+           <div class="imgi"><img src="./test-2.jpeg" alt="image" class="imgii-1"></div>
+               <p class="ma-1">From the moment I stepped into MediCraft, I felt reassured. The staff's professionalism and genuine concern for my well-being were evident throughout my treatment. Their thorough explanations and personalized care made a world of difference during a challenging time. I'm grateful for their expertise.</p>
+               <p class="ma-2" style="text-align: left;">Engineer,Sourav Verma<br> Mumbai, India</p>
+       </div>
+    </p>
+   </div>
+
+   <div class="rw" data-reveal="left">
+    <p>
+       <div class="testimonials">
+           <div class="imgi"><img src="./test-3.webp" alt="image" class="imgii"></div>
+               <p class="ma-1">MediCraft provided me with exceptional care during my recent surgery. The doctors' attention to detail and the nurses' attentiveness ensured a smooth recovery process. Their kindness and understanding made me feel like more than just a patient. Thank you for making a difficult time a little easier.</p>
+               <p class="ma-2" style="text-align: right;">Researcher, Jenny Dave <br> New York City,USA</p>
+       </div>
+    </p>
+   </div>
+
+   <div class="rw" data-reveal="left">
+    <p>
+       <div class="testimonials">
+           <div class="imgi"><img src="./test-4.webp" alt="image" class="imgii-1"></div>
+               <p class="ma-1">The experience at MediCraft Hospital was exceptional. The environment felt safe, and the staff was not only professional but also friendly and supportive. Their commitment to ensuring my comfort and well-being during my stay was commendable. I highly recommend their services to anyone in need.</p>
+               <p class="ma-2" style="text-align: left;">Bank manager, Abhishek Patel <br> Jaipur, India</p>
+       </div>
+    </p>
+   </div>
+</section>
+
+<!-- /* book section*/ -->
+<h1 class="main-head"><span>Book</span> now</h1>
+<section class="book" id="book">
+    <div class="row">
+        <div class="imageBook">
+            <img src="./test-5.webp" alt="book">
+        </div>
+        <form action="">
+            <h3>Book Appointment</h3>
+            <input type="text" placeholder="your name" class="box">
+            <input type="number" placeholder="your number" class="box">
+            <input type="email" placeholder="your email" class="box">
+            <input type="date" class="box">
+            <input type="submit" value="book now" class="btn">
+
+        </form>
+
+       
+    </div>
+</section>
+
+ <!-- footer section -->
+ <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home"><i class="fas fa-chevron-right"></i>Home</a>
+            <a href="#about"><i class="fas fa-chevron-right"></i>About Us</a>
+            <a href="#services"><i class="fas fa-chevron-right"></i>Service</a>
+            <a href="#doctors"><i class="fas fa-chevron-right"></i>Doctors</a>
+            <a href="#review"><i class="fas fa-chevron-right"></i>Testimonials</a>
+            <a href="#book"><i class="fas fa-chevron-right"></i>Book</a>
+        </div>
+        <div class="box">
+            <h3>Our Services</h3>
+            <a href="#"><i class="fas fa-chevron-right"></i>Dental Care</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>Massage Therapy</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>Cardiology</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>Diagnosis</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>Ambulance Service</a>
+        </div>
+        <div class="box">
+            <h3>Conatact Info</h3>
+            <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+            <a href="#"><i class="fas fa-phone"></i>+111-222-333</a>
+            <a href="#"><i class="fas fa-envelope"></i>medicraft@gmail.com</a>
+            <a href="#"><i class="fas fa-envelope"></i>craftmedi12@gmail.com</a>
+            <a href="#"><i class="fas fa-map"></i>Mumbai,india-400104</a>
+        </div>
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+        </div>
+    </div>
+    <div class="credit">Created by <span>Ravi Jat</span> | all rights reserved.</div>
+ </section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+ 
+
+
+
+
