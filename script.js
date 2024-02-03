@@ -24,11 +24,6 @@ searchBtn.addEventListener('click',()=>{
 });
 
 formBtn.addEventListener('click',()=>{
-    searchBtn.classList.toggle('fa-times');
-    searchBar.classList.toggle('active');
-});
-
-formBtn.addEventListener('click',()=>{
     loginForm.classList.add('active');
 })
 formClose.addEventListener('click',()=>{
